@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/itemLayoutMusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/musicLayoutImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:paddingHorizontal="10dp"
+            android:src="@drawable/music_icon_recycler_view"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/musicLayoutName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="musicname"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/durationMusicLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="02:45"
+                android:textColor="#656464"
+                android:textSize="10sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="8dp"
+            android:gravity="center_vertical">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/moreMusicLayout"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:backgroundTint="@android:color/darker_gray"
+                android:background="@drawable/share"
+                android:rotation="90"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".1dp"
+        android:background="#DAD9D9"/>
+
+</LinearLayout>
